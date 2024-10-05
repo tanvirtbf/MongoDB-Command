@@ -1,0 +1,21 @@
+## Create Database and Create Collection
+
+// Create Database :
+-- use bank_db (bank_db nam e ekta database create hoyeche)
+
+// Create Collection :
+-- db.createCollection("employees") (bank_db database create korar por jokhon amra ai database er moddhe thakbo tokhon ai command dile employees nam e collection create hoye jabe)
+
+// Show Collections :
+-- show collections
+
+// Show Database Collection :
+-- show dbs
+
+## Delete Database and Delete Collection 
+
+// Delete Database
+--db.dropDatabase()
+
+// Delete Collection 
+-- db.collection_name.drop() 
