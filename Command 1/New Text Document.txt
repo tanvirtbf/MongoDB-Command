@@ -143,6 +143,33 @@ db.cars.insertMany(
 
 
 
+2. Read 
+
+// find() 
+// Syntex : db.collection_name.find() -- all document show hobe 
+
+// jodi chai cars collection er prottekta documents theke specific kono key er data chai tahole...
+
+// Syntext : db.cars.find({}, {model:1}) -- tahole cars collection er moddhe joto document ase sob gular theke model nam e key print hobe with unique id 
+// kintu jodi id na chai tahole...
+// Syntext : db.cars.find({}, {model:1, _id:0})
+// ekhane upore black {} deyar karon amk bolte hocche match all the document. mane sob document match kore result ano
+
+// example : jodi chai sob document er moddhe jar jar fuel_type Petrol hobe sei document gula return koro tahole..
+db.cars.find({fuel_Type:"Petrol"})
+
+// example : jodi chai sob document er moddhe jar jar features array er moddhe Sunroof name thakbe segula return koro..
+db.cars.find({"features":'Sunroof'})
+
+// example : jodi chai sob document er moddhe jar jar engine object er moddhe type key er value "Naturally Aspirated" tader return koro..
+db.cars.find("engine.type":"Naturally Aspirated")
+
+
+// findOne()
+// Syntex : db.collection_name.findOne() -- oi collection er sob document er moddhe first document ta return hobe
+
+
+
 
 
 
