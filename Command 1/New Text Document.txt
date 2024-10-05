@@ -19,3 +19,24 @@
 
 // Delete Collection 
 -- db.collection_name.drop() 
+
+
+## CRUD (Create, Read, Update, Delete)
+
+1. Create --- insertOne() , insertMany()
+2. Read --- find() , findOne()
+3. Update --- updateOne() , updateMany()
+4. Delete --- deleteOne() , deleteMany()
+
+
+
+
+
+
+
+
+
+
+
+
+
